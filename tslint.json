@@ -22,7 +22,8 @@
       "huaweicloud",
       "kubernetes",
       "oracle",
-      "titus "
+      "titus ",
+      "tencent"
     ],
     "indent": [true, "spaces"],
     "jsx-no-lambda": false,

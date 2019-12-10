@@ -3,7 +3,7 @@ cd `dirname $0`
 MODULES=$*;
 
 # Given a module, prints that module's dependencies
-# hard coding known deps for now because the package.json 
+# hard coding known deps for now because the package.json
 # files don't yet contain the package's dependencies
 ModuleDeps () {
   case "$1" in
@@ -17,6 +17,7 @@ ModuleDeps () {
       huaweicloud) echo "core" ;;
       kubernetes) echo "core" ;;
       oracle) echo "core" ;;
+      tencent) echo "core" ;;
       titus) echo "amazon docker core" ;;
       *)
         echo "Unknown module: ${MODULE}"
@@ -43,7 +44,7 @@ UniqueDeps () {
 ModuleTuples () {
   MODULE=$1
   shift
-  for DEP in $* ; do 
+  for DEP in $* ; do
     echo $DEP $MODULE
   done
 }
