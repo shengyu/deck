@@ -119,6 +119,12 @@ var oracle = {
     region: '{%oracle.default.region%}',
   },
 };
+var tencentcloud = {
+  defaults: {
+    account: '{%tencentcloud.default.account%}',
+    region: '{%tencentcloud.default.region%}',
+  },
+};
 
 window.spinnakerSettings = {
   authEnabled: authEnabled,
@@ -228,6 +234,7 @@ window.spinnakerSettings = {
         region: 'us-east-1',
       },
     },
+    tencentcloud: tencentcloud,
   },
   pubsubProviders: ['google'], // TODO(joonlim): Add amazon once it is confirmed that amazon pub/sub works.
   triggerTypes: [

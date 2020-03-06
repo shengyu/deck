@@ -18,6 +18,7 @@ ModuleDeps () {
       huaweicloud) echo "core" ;;
       kubernetes) echo "core" ;;
       oracle) echo "core" ;;
+      tencentcloud) echo "core" ;;
       titus) echo "amazon docker core" ;;
       *)
         echo "Unknown module: $1"
